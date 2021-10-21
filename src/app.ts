@@ -22,10 +22,6 @@ const io = new Server(server, {
     },
 });
 
-io.on('connection', (socket) => {
-    console.log('Nova conexão! ' + socket.id);
-});
-
 app.use(express.json());
 
 app.use('/signin', signin);
